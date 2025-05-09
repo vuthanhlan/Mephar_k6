@@ -11,7 +11,5 @@ export function login(input) {
     });
     const body = res.json();
     const token = body?.data?.accessToken?.token;
-    console.log('Token:', token); // Kiểm tra có bị undefined không
-
     return token;
 }
